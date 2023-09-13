@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1.contact Contactez-nous
+    div.blocContact
+        .info
+            img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLD8w_kZVGtChVjKv_YXIqaCTtnzXXVljyhg&usqp=CAU', alt='Logo de votre application')
+            address
+                p
+                    <strong>Adresse :</strong>
+                    |  Immeuble Elh Omar Dia, Bd de St Louis, Dakar
+                p
+                    <strong>Téléphone :</strong>
+                    |  77 526 38 59
+                p
+                    <strong>Email :</strong>
+                    a(href='mailto:')  hello@gomycode.com
+        form
+            div.form-group
+                label(for='nom') Nom
+                input(type='text', name='nom', required)
+            div.form-group
+                label(for='email') Email
+                input(type='email', name='email', required)
+            div.form-group
+                label(for='message') Message
+                textarea(name='message', rows='5', required)
+            button(type='submit') Envoyer

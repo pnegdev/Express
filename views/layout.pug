@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= title
+        link(rel="stylesheet", href="style.css")
+        link(rel="shortcut icon", href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLD8w_kZVGtChVjKv_YXIqaCTtnzXXVljyhg&usqp=CAU", type="image/x-icon")
+
+    body
+        header
+            a.logo(href='/')
+                img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLD8w_kZVGtChVjKv_YXIqaCTtnzXXVljyhg&usqp=CAU', alt='Logo')
+            nav
+                ul
+                li
+                    a(href='/') Accueil
+                li
+                    a(href='/services') Nos Services
+                li
+                    a(href='/contact') Contactez-nous
+
+        main
+            block content
+
+        footer
+            p Copyright © 2023 - GoMyCode - PB
